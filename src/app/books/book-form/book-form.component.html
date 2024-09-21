@@ -1,0 +1,16 @@
+<div class="container">
+    <mat-card>
+      <form [formGroup]="bookForm" (ngSubmit)="onSubmit()">
+        <mat-form-field>
+          <mat-label>Título</mat-label>
+          <input matInput formControlName="title">
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Autor</mat-label>
+          <input matInput formControlName="author">
+        </mat-form-field>
+        <button mat-raised-button color="primary" type="submit">Salvar</button>
+      </form>
+    </mat-card>
+  </div>
+  
